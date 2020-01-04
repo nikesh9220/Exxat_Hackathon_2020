@@ -1,0 +1,14 @@
+D:\Hackathon\HackathonService\Code\obj\Debug\netcoreapp2.2\Hackathon.csproj.CoreCompileInputs.cache
+D:\Hackathon\HackathonService\Code\obj\Debug\netcoreapp2.2\Hackathon.RazorAssemblyInfo.cache
+D:\Hackathon\HackathonService\Code\obj\Debug\netcoreapp2.2\Hackathon.RazorAssemblyInfo.cs
+D:\Hackathon\HackathonService\Code\obj\Debug\netcoreapp2.2\Hackathon.AssemblyInfoInputs.cache
+D:\Hackathon\HackathonService\Code\obj\Debug\netcoreapp2.2\Hackathon.AssemblyInfo.cs
+D:\Hackathon\HackathonService\Code\bin\Debug\netcoreapp2.2\Hackathon.deps.json
+D:\Hackathon\HackathonService\Code\bin\Debug\netcoreapp2.2\Hackathon.runtimeconfig.json
+D:\Hackathon\HackathonService\Code\bin\Debug\netcoreapp2.2\Hackathon.runtimeconfig.dev.json
+D:\Hackathon\HackathonService\Code\bin\Debug\netcoreapp2.2\Hackathon.dll
+D:\Hackathon\HackathonService\Code\bin\Debug\netcoreapp2.2\Hackathon.pdb
+D:\Hackathon\HackathonService\Code\obj\Debug\netcoreapp2.2\Hackathon.RazorTargetAssemblyInfo.cache
+D:\Hackathon\HackathonService\Code\obj\Debug\netcoreapp2.2\Hackathon.dll
+D:\Hackathon\HackathonService\Code\obj\Debug\netcoreapp2.2\Hackathon.pdb
+D:\Hackathon\HackathonService\Code\obj\Debug\netcoreapp2.2\Hackathon.csprojAssemblyReference.cache
