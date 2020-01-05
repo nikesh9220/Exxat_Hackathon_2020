@@ -41,6 +41,9 @@ namespace AspNetCoreApps
 
             //services.AddScoped<IService<University, int>, UniversityService>();
             services.AddScoped<IService<StudentDetails, int>, StudentDetailservice>();
+            services.AddScoped<IPreferenceService<UserPreferences,int>,PreferenceService>();
+
+            services.AddCors(options => options.AddPolicy("corspolicy", policy => { policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader(); }));
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
@@ -64,6 +67,7 @@ namespace AspNetCoreApps
             // register the custom middleware
             app.UseCustomErrorHandlerMiddleware();
             app.UseMvc();
+            app.UseCors("corspolicy");
         }
     }
 }

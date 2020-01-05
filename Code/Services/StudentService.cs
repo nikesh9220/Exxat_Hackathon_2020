@@ -40,6 +40,25 @@ namespace Hackathon.Services
             return res;
         }
 
+        public async Task<IEnumerable<StudentDetails>> GetPaginatedDataAsync(int id, string filter, string sort, int pageIndex, int pageSize)
+        {
+            var res = await ctx.StudentDetails.ToListAsync();
+            List<StudentDetails> respCopy = res;
+            var initialPos = pageIndex * pageSize;
+
+            if(sort == "desc")
+            {
+                respCopy.Reverse();
+            }
+
+            if(res.Count > 0 && pageIndex != 0)
+            {
+                respCopy = res.GetRange(initialPos, initialPos + pageSize);
+            }
+
+            return respCopy;
+        }
+
         public async Task<StudentDetails> GetAsync(int id)
         {
             var res = await ctx.StudentDetails.FindAsync(id);
@@ -55,6 +74,11 @@ namespace Hackathon.Services
             ctx.Entry<StudentDetails>(entity).State = EntityState.Modified;
             await ctx.SaveChangesAsync();
             return entity;
+        }
+        public async Task<IEnumerable<UserPreferences>> GetHeadersAsync()
+        {
+            var res = await ctx.userPreferences.ToListAsync();
+            return res;
         }
     }
 }
